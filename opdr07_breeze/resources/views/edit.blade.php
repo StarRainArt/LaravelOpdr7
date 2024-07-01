@@ -1,3 +1,5 @@
+<x-dashboard-layout>
+
 <h1>Edit Product</h1>
 <form action="{{ route('products.update', $product->id) }}" method="POST">
     @csrf
@@ -31,4 +33,6 @@
     <button type="submit">Bijwerken</button>
 </form>
 
-<a href="{{ route('products.dashboard') }}">Go Back</a>
+<a href="{{ route('dashboard') }}">Go Back</a>
+
+</x-dashboard-layout>

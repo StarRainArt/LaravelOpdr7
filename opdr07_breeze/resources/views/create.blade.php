@@ -1,3 +1,5 @@
+<x-dashboard-layout>
+
 <h1>New Product</h1>
 <form action="{{ route('products.store') }}" method="POST">
     @csrf
@@ -13,3 +15,5 @@
     <input type="number" name="price" id="price" step="0.01" max="999999.99" min="0.01" required>
     <button type="submit">Create Product</button>
 </form>
+
+</x-dashboard-layout>

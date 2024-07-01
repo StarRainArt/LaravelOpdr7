@@ -38,7 +38,7 @@ class ProductController extends Controller
         $product->description = $request->description;
         $product->save();
 
-        return redirect()->route("products.dashboard");
+        return redirect()->route("dashboard");
     }
 
     /**
@@ -69,7 +69,7 @@ class ProductController extends Controller
         $product->description = $request->description;
         $product->save();
 
-        return redirect()->route('products.dashboard');
+        return redirect()->route('dashboard');
     }
 
     /**
@@ -79,6 +79,6 @@ class ProductController extends Controller
     {
         $product->delete();
 
-        return redirect()->route("products.dashboard");
+        return redirect()->route("dashboard");
     }
 }

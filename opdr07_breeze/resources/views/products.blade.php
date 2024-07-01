@@ -1,3 +1,5 @@
+<x-dashboard-layout>
+
 <a href="{{ route('products.create') }}">Create New Product</a>
 
 <section>
@@ -15,3 +17,5 @@
         </article>
     @endforeach
 </section>
+
+</x-dashboard-layout>
